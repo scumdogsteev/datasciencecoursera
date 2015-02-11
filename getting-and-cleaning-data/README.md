@@ -14,4 +14,8 @@ You should create one R script called run_analysis.R that does the following.
 
 1. README.md (this file)
 2. run_analysis.R (the R script)
-3. CodeBook.md (describes the variables, the data, and the work that is performed to clean up the data)
+3. CodeBook.md (describes the variables, the data, and the work that is performed to clean up the data)4. 
+
+### Script (run_analysis.R)
+
+Placeholder
