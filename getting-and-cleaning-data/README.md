@@ -1,7 +1,7 @@
 # Getting and Cleaning Data Course Project
-#### by Steve Myles, February 2015
+##### by Steve Myles, February 2015
 
-### Assignment:
+#### Assignment:
 You should create one R script called run_analysis.R that does the following. 
 
 1. Merges the training and the test sets to create one data set.
@@ -10,12 +10,12 @@ You should create one R script called run_analysis.R that does the following.
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### Files:
+#### Files:
 
 1. README.md (this file)
 2. run_analysis.R (the R script)
 3. CodeBook.md (describes the variables, the data, and the work that is performed to clean up the data)4. 
 
-### Script (run_analysis.R)
+#### Script (run_analysis.R)
 
 Placeholder
