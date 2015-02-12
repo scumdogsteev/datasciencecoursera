@@ -1,5 +1,5 @@
 # Getting and Cleaning Data Course Project
-#### by Steve Myles, February 2014
+#### by Steve Myles, February 2015
 
 ### Assignment:
 You should create one R script called run_analysis.R that does the following. 
