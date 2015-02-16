@@ -28,3 +28,4 @@ Placeholder
 
 1. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 2. David Hood.  [David's Course Project FAQ](https://class.coursera.org/getdata-011/forum/thread?thread_id=69).  Getting and Cleaning Data Discussion Forum.  Coursera.  Feb 2015.
+3. Livius. [Response to "Elegant way to check for missing packages and install them?"](http://stackoverflow.com/a/19871106). Stack Overflow. Nov 2013.
