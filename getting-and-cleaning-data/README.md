@@ -20,6 +20,9 @@ You should create one R script called run_analysis.R that does the following.
 
 #### Assumptions
 
+ The Samsung data is available in the working directory in an unzipped folder named "UCI HAR Dataset" with the directory structure underneath that left intact from the original zip file (e.g., there are subdirectories called "test" and "train" in "UCI HAR Dataset").
+2. The user has either previously installed the [plyr](http://plyr.had.co.nz/) and [dplyr](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) packages or is connected to the Internet so the script can install them.
+
 #### Logic
 
 Placeholder
