@@ -27,8 +27,8 @@ if(!file.exists("./UCI HAR Dataset")) {
     } else {
 
 ## ***************************************************************************
-## TRY TO LOAD THE "plyr" AND "reshape2" PACKAGES IF THEY ARE INSTALLED.  IF
-## THEY ARE NOT INSTALLED, INSTALL THEM.
+## TRY TO LOAD THE "plyr," "dplyr," AND "reshape2" PACKAGES IF THEY ARE
+## INSTALLED.  IF THEY ARE NOT INSTALLED, INSTALL THEM.
 ## ***************************************************************************
 
     ## "pkgInst" is a function that checks whether a set of packages are 
@@ -50,7 +50,7 @@ if(!file.exists("./UCI HAR Dataset")) {
 
 ## ***************************************************************************
 ## READ THE ACTIVITY LABELS AND FEATURES DATA INTO DATA FRAMES AND LABEL
-## THEM CORRECTLY, MAKING CHANGES AS NECESSARY.
+## THEM CORRECTLY, CHANGING THE FEATURE COLUMN TO CHARACTER TYPE.
 ## ***************************************************************************
 
     ## read "activity_labels.txt" into a data frame and change its column 
@@ -126,7 +126,8 @@ if(!file.exists("./UCI HAR Dataset")) {
     names(merged) <- c(names(activity_labels), "Subject", features$Feature)
 
 ## ***************************************************************************
-## SUBSET THE MERGED DATA FRAME TO THE RELEVANT COLUMNS
+## SUBSET THE MERGED DATA FRAME TO THE COLUMNS REPRESENTING MEAN AND STANDARD
+## DEVIATION
 ## ***************************************************************************
 
     ## subset the merged data frame to only the relevant columns ("Subject," 
