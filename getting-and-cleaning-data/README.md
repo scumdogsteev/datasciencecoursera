@@ -25,7 +25,25 @@ You should create one R script called [run_analysis.R](https://github.com/scumdo
 
 #### Process
 
-Placeholder
+[run_analysis.R](https://github.com/scumdogsteev/datasciencecoursera/blob/master/getting-and-cleaning-data/run_analysis.R) goes through the following process to meet the requirements.  Please see the script for details about how each step is performed.
+
+1. **Merge the training and the test sets to create one data set (requirement #1)**
+  1. Check whether the UCI HAR Dataset is available in the working directory.  If not, the script exits and gives the user a message asking for the data to be unzipped in the appropriately named subdirectory.
+  2. Load the "plyr," "dplyr," and "reshape2" packages as they are necessary for the data manipulation that follows.  If they have not been previously installed, the script installs them.
+  3. Read the "Activity Labels" and "Features" data into data frames, labeling the columns and changing the Feature data to character type.
+  4. Read the separate parts of the training data set (training activities, "y_train.txt;" training data, "X_train.txt;" and training subject, "subject_train.txt") and combine them into a single data frame.
+  5. Read the separate parts of the test data set (test activities, "y_test.txt;" test data, "X_test.txt;" and test subject, "subject_test.txt") and combine them into a single data frame.
+  6. Merge the training and test data sets into a single data frame.
+  7. Add activity labels from the "Activity Labels" data frame (**Uses descriptive activity names to name the activities in the data set (requirement #3)**)
+  8. Name the columns based on the "Features" data ("**Appropriately labels the data set with descriptive variable names (requirement #4)**)
+2. **Extract only the measurements on the mean and standard deviation for each measurement (requirement #2)**
+  1. Subset the merged data frame to the columns representing mean and standard deviation
+3. **Create a second, independent tidy data set with the average of each variable for each activity and each subject (requirement #5)**
+  1. Make all column names legal for R by removing all parentheses and dashes.
+  2. Change the "Subject" column to a factor for easier manipulation.
+  3. Sort the merged data frame by "Subject" and "Activity"
+  4. Calculate the average (mean) of each numeric column and return a data frame ("merged_summary" in the script) with the average for each subject/activity combination.
+  5. Write this data frame to a text file called "samsung_summary.txt" using "row.names = FALSE" as instructed.
 
 ### References
 
